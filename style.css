@@ -329,3 +329,18 @@ input::-webkit-inner-spin-button {
     margin-right: 15px;
 }
 
+.footer-bottom {
+    padding-top: 28px;
+    border-top: 1px solid #E8ECED;
+}
+
+.footer-bottom-text {
+    font-size: 14px;
+    text-align: center;
+    color: #A1B2B8;
+}
+
+.footer-bottom-text-link {
+    color: #8167d1;
+    text-decoration: underline;
+}
