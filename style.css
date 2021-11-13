@@ -140,6 +140,7 @@ input::-webkit-inner-spin-button {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 
 .header-logo-container {
@@ -280,6 +281,7 @@ input::-webkit-inner-spin-button {
 .footer {
     background: #FAFAFA;
     padding: 60px 0 30px;
+    margin-top: 120px;
 }
 
 .footer-content {
@@ -343,4 +345,72 @@ input::-webkit-inner-spin-button {
 .footer-bottom-text-link {
     color: #8167d1;
     text-decoration: underline;
+}
+
+.header-banner {
+    background-image: url("./img/header-banner.svg");
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.header-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 63px;
+    color: #FAFAFA;
+}
+
+.header-banner-text:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 80%;
+    border-bottom: 1px solid #FBDF46;
+    left: 10%;
+}
+
+.success-certificates-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+
+.success-certificates-item {
+    max-width: 268px;
+}
+
+.success-certificates-img-container {
+    height: 182px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.success-certificates-img {
+    width: 100%;
+    transition: all 500ms ease;
+}
+
+.success-certificates-item-footer {
+    background: #0C1939;
+    padding: 30px 16px;
+}
+
+.success-certificates-item-footer p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FAFAFA;
+}
+
+.success-certificates-item:hover .success-certificates-img {
+    transform: scale(1.05);
 }
