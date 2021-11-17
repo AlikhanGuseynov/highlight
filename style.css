@@ -648,6 +648,77 @@ input::-webkit-inner-spin-button {
     color: #0C1939;
 }
 
+.portfolio-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    max-width: 368px;
+    box-shadow: 0 4px 30px rgba(23, 62, 77, 0.1);
+}
+
+.portfolio-item-img {
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+.portfolio-item-footer-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -24px;
+    background-color: #0C1939;
+    max-height: 48px;
+    height: 100%;
+    max-width: 48px;
+    width: 100%;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.portfolio-item-content {
+    margin: 0 16px 16px 16px;
+}
+
+.portfolio-item-subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0 0 12px 0;
+}
+
+.portfolio-item:hover .portfolio-item-footer-img {
+    opacity: 1;
+}
+
+.portfolio-btn-wrapper {
+    width: 100%;
+}
+
+.portfolio-btn {
+    display: inline-block;
+    background: #0C1939;
+    padding: 12px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FAFAFA;
+    text-decoration: none;
+    margin: 60px auto 0;
+}
+
+.button-img {
+    margin: 0 0 0 15px;
+}
+
 
 @media only screen and (max-width: 700px ) {
 
@@ -747,5 +818,13 @@ input::-webkit-inner-spin-button {
 
     .questions-container {
         grid-template-columns: 1fr;
+    }
+
+    .portfolio-list {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item-footer-img {
+        opacity: 1;
     }
 }
