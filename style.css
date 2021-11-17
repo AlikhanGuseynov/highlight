@@ -704,7 +704,8 @@ input::-webkit-inner-spin-button {
 }
 
 .portfolio-btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     background: #0C1939;
     padding: 12px 32px;
     font-weight: 500;
