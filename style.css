@@ -1152,6 +1152,32 @@ input::-webkit-inner-spin-button {
     width: 100%;
 }
 
+.customer-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+
+.customer-item {
+    height: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E8ECED;
+}
+
+.customer-item-img-active {
+    display: none;
+}
+
+.customer-item:hover .customer-item-img-active {
+    display: block;
+}
+
+.customer-item:hover .customer-item-img-inactive {
+    display: none;
+}
+
 @media only screen and (max-width: 700px ) {
 
     .only-mobile {
@@ -1381,5 +1407,9 @@ input::-webkit-inner-spin-button {
 
     .question-container {
         margin: 0 16px;
+    }
+
+    .customer-list {
+        grid-template-columns: 1fr;
     }
 }
