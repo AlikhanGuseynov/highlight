@@ -1065,6 +1065,92 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+.services-container {
+    margin-top: -206px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 30px rgba(23, 62, 77, 0.1);
+    position: relative;
+    z-index: 50;
+    padding: 30px;
+}
+
+.services-title-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.services-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #E8ECED;
+}
+
+.services-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #0C1939;
+    margin: 0 0 0 16px;
+}
+
+.services-text {
+    margin: 0 0 35px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #020608;
+}
+
+.services-text {
+    color: #0F2B36;
+}
+
+.services-suggestion {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background-color: #0C1939;
+    margin: 0 0 40px 0;
+    width: 100%;
+}
+
+.services-suggestion-img {
+    display: flex;
+    position: absolute;
+}
+
+.suggestion-img-left {
+    left: 12px;
+    top: 12px;
+}
+
+.suggestion-img-right {
+    right: 12px;
+    bottom: 12px;
+}
+
+.services-suggestion-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FAFAFA;
+    margin: 48px 0 48px 0;
+}
+
+.services-banner-img {
+    width: 100%;
+}
 
 @media only screen and (max-width: 700px ) {
 
@@ -1281,5 +1367,19 @@ input::-webkit-inner-spin-button {
     .send-form-btn-wrapper {
         display: flex;
         justify-content: flex-end;
+    }
+
+    .services-container {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services-width {
+        padding: 0;
+    }
+
+    .question-container {
+        margin: 0 16px;
     }
 }
