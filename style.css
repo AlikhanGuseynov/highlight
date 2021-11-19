@@ -942,6 +942,46 @@ input::-webkit-inner-spin-button {
     margin-top: 90px;
 }
 
+.contact-container {
+    margin-top: -196px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 30px rgba(23, 62, 77, 0.1);
+    padding: 60px 30px;
+    position: relative;
+    z-index: 50;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact-title {
+    font-weight: 500;
+    font-size: 22px;
+    color: #0C1939;
+}
+
+.contact-list-item-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #0C1939;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.contact-list-item + .contact-list-item {
+    margin-top: 40px;
+}
+
+.contact-list {
+    padding: 50px 0 30px;
+    border-bottom: 1px solid #FBDF46;
+    margin-bottom: 30px;
+}
+
+.contact-sm-container {
+
+}
+
 @media only screen and (max-width: 700px ) {
 
     .only-mobile {
