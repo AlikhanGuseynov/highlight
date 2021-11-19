@@ -233,6 +233,35 @@
                 <p class="contact-title">
                     Bizə yazın
                 </p>
+                <form action="">
+                    <div class="contact-form">
+                        <input class="contact-input" placeholder="Ad" type="text">
+                        <input class="contact-input" placeholder="Soyad" type="text">
+                        <input class="contact-input" placeholder="Email" type="text">
+
+                        <div class="status-container flex align-items-center">
+                            <p class="status-container-text">Status</p>
+                            <div class="flex align-items-center">
+                                <input checked name="status" id="utterance" class="status-radio" type="radio">
+                                <label class="status-label" for="utterance">İrad</label>
+                            </div>
+                            <div class="flex align-items-center">
+                                <input name="status" id="offer" class="status-radio" type="radio">
+                                <label class="status-label" for="offer">Təklif</label>
+                            </div>
+                        </div>
+
+                        <textarea name="" id="" placeholder="Mesajınız" class="contact-textarea" cols="30"
+                                  rows="10"></textarea>
+                        <div class="send-form-btn-wrapper">
+                            <button class="send-form-btn">
+                                GÖNDƏR
+                                <img src="./img/send-form.svg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
         </div>
 
