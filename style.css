@@ -720,6 +720,103 @@ input::-webkit-inner-spin-button {
     margin: 0 0 0 15px;
 }
 
+.news-details-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 32px;
+    margin-top: 90px;
+}
+
+.news-title-option {
+    margin-bottom: 30px;
+}
+
+.news-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #0B0D17;
+    margin-bottom: 20px;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #C6C8D3;
+    margin-right: 27px;
+}
+
+.share-container {
+    background: #0063F7;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.share-container-text {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 9px;
+}
+
+.news-details-img-container {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.news-details-img {
+    width: 100%;
+}
+
+.news-details-main-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #020608;
+}
+
+.like-news-container {
+    background: #FFFFFF;
+    box-shadow: 0 4px 30px rgba(23, 62, 77, 0.1);
+}
+
+.like-news-header {
+
+}
+
+.like-news-header-text {
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000;
+    padding: 30px;
+    text-align: center;
+}
+
+.like-news-item {
+    border: 1px solid #E8ECED;
+    box-sizing: border-box;
+    padding: 30px 16px;
+    transition: all 300ms ease;
+}
+
+.like-news-item:hover {
+    box-shadow: 0px 4px 30px rgba(23, 62, 77, 0.1);
+}
+
+.like-news-item-date {
+    font-size: 14px;
+    color: #0C1939;
+    margin-bottom: 16px;
+}
+
+.like-news-item-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0C1939;
+}
+
+.like-news-item-link {
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 700px ) {
 
@@ -740,7 +837,7 @@ input::-webkit-inner-spin-button {
     }
 
     .header {
-        height: 65px;
+        height: 80px;
     }
 
     .header-inner {
@@ -827,5 +924,18 @@ input::-webkit-inner-spin-button {
 
     .portfolio-item-footer-img {
         opacity: 1;
+    }
+
+    .news-details-container {
+        grid-template-columns: 1fr;
+        margin-top: 70px;
+    }
+
+    .news-title {
+        font-size: 18px;
+    }
+
+    .news-details-main-text {
+        font-size: 14px;
     }
 }
