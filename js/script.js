@@ -12,7 +12,6 @@ $('.sidebar-nav-link').click((e) => {
 
 $(document).ready(function () {
 
-
     const blogDetailCarousel = $(".blog-detail-carousel")
     if ($(window).width() > 700) {
         blogDetailCarousel.removeClass('owl-carousel')
@@ -38,9 +37,14 @@ $(document).ready(function () {
             nav: true,
             items: 1,
         });
-        // asd.trigger('open.owl.carousel', 2);
-
     })
+
+    const asd = $(".some-slider")
+    asd.owlCarousel({
+        dots: false,
+        nav: false,
+        items: 1,
+    });
 
 
 })
