@@ -39,12 +39,33 @@ $(document).ready(function () {
         });
     })
 
-    const asd = $(".some-slider")
-    asd.owlCarousel({
+    const indexSlider = $(".index-slider")
+    indexSlider.owlCarousel({
         dots: false,
+        margin: 10,
         nav: false,
+        loop: true,
+        center: true,
+        autoWidth: false,
+        lazyLoad: true,
         items: 1,
+        responsive: {
+            700: {
+                items: 1.5,
+                autoWidth: true,
+            }
+        }
     });
+    $('.slider-btn.next').click(function () {
+        indexSlider.trigger('next.owl.carousel');
+    })
+    $('.slider-btn.prev').click(function () {
+        indexSlider.trigger('prev.owl.carousel', [300]);
+    })
 
+    indexSlider.on('changed.owl.carousel', function (event) {
+        console.log(event.item.index)
+    })
 
 })
+
