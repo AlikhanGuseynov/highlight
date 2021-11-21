@@ -1062,6 +1062,10 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+.send-form-btn img {
+    margin-left: 10px;
+}
+
 .services-container {
     margin-top: -206px;
     background: #FFFFFF;
@@ -1482,6 +1486,7 @@ input::-webkit-inner-spin-button {
     z-index: 99;
     margin-top: -215px;
 }
+
 .call-you-form-img-bottom {
     position: absolute;
     right: 0;
@@ -1821,5 +1826,106 @@ input::-webkit-inner-spin-button {
 
     .error-page-title {
         margin-bottom: 16px;
+    }
+
+    .about-title {
+        padding: 8px 0;
+        width: Calc(100vw - 32px);
+        text-align: center;
+        margin: 0 16px 30px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 30px;
+        padding: 0 16px;
+    }
+
+    .about-banner {
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .about-banner-container {
+        min-height: 230px;
+    }
+
+    .about-banner-bottom-container {
+        margin-top: 0;
+        margin-left: 0;
+        padding: 30px 0;
+    }
+
+    .about-banner-bottom-container-bottom-text {
+        padding: 0 16px;
+    }
+
+    .about-width {
+        padding: 0;
+    }
+
+    .about-banner-bottom-container {
+        margin-bottom: 30px;
+    }
+
+    .about-advantage-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        color: #0C1939;
+        padding: 0 16px;
+    }
+
+    .about-advantage-list {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .about-advantage-item {
+        background: #FAFAFA;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.16);
+        margin: 0 16px;
+    }
+
+    .call-you-form-img-top, .call-you-form-img-bottom {
+        display: none;
+    }
+
+    .call-you-container {
+        grid-template-columns: 1fr;
+    }
+
+    .call-you-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        color: #0C1939;
+    }
+
+    .call-you-right-inner {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        padding: 16px 30px;
+    }
+
+    .call-you-right {
+        height: 418px;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .call-you-right:after {
+        content: none;
+    }
+
+    .call-you-form-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 30px;
     }
 }
