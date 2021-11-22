@@ -1233,6 +1233,7 @@ input::-webkit-inner-spin-button {
 .carousel-item {
     width: 100%;
     cursor: pointer;
+    max-height: 80vh;
 }
 
 
@@ -1258,8 +1259,14 @@ input::-webkit-inner-spin-button {
     max-width: 968px;
     width: 100%;
     padding: 16px;
-    max-height: 70vh;
+    max-height: 90vh;
     position: relative;
+    top: -40px;
+}
+
+.popup-carousel {
+    max-height: 70vh;
+    height: 100%;
 }
 
 .popup-carousel.owl-theme .owl-nav {
