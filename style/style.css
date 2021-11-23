@@ -1284,7 +1284,7 @@ input::-webkit-inner-spin-button {
 .popup-carousel.owl-theme .owl-nav button {
     width: 48px;
     height: 48px;
-    background: #FBDF46;
+    background: #FBDF46 !important;
     opacity: 1;
 }
 

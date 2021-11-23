@@ -39,6 +39,21 @@ $(document).ready(function () {
         });
     })
 
+
+    $('.success-certificates-item').click((e) => {
+        $(".carousel-popup-wrapper").addClass('active');
+        const asd = $(".popup-carousel")
+        asd.owlCarousel({
+            dots: false,
+            margin: 10,
+            nav: true,
+            items: 1,
+        });
+        // asd.trigger('to.owl.carousel', 0);
+    })
+
+
+
     const indexSlider = $(".index-slider")
     indexSlider.owlCarousel({
         dots: false,
@@ -68,8 +83,7 @@ $(document).ready(function () {
     })
 
 
-    $('.scroll-btn-link').on('click', function() {
-
+    $('.scroll-btn-link').on('click', function(e) {
         let href = $(this).attr('href');
 
         $('html, body').animate({
