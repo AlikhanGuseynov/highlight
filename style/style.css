@@ -1427,6 +1427,7 @@ input::-webkit-inner-spin-button {
 
 .about-advantage-item {
     padding: 71px 30px 48px;
+    transition: all 300ms ease;
 }
 
 .about-advantage-item:hover {
@@ -1744,6 +1745,21 @@ input::-webkit-inner-spin-button {
     position: relative;
 }
 
+.provide-service-item-inner-hover {
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.provide-service-item:hover .provide-service-item-inner-simple {
+    display: none;
+}
+
+.provide-service-item:hover .provide-service-item-inner-hover {
+    display: block;
+    opacity: 1;
+}
+
+
 .provide-service-row {
     margin-bottom: 60px;
 }
@@ -1837,7 +1853,7 @@ input::-webkit-inner-spin-button {
 }
 
 .index-blog-news {
-    margin-top: 152px;
+    margin-top: 20px;
 }
 
 .index-blog-news-title {
