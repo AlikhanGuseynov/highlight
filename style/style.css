@@ -1638,6 +1638,7 @@ input::-webkit-inner-spin-button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
     padding-top: 130px;
+    padding-bottom: 30px;
 }
 
 .fast-developing-title {
