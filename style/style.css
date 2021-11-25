@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+blockquote {
+    /*quotes: "\201C""\201D""\2018""\2019";*/
+    position: relative;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -784,12 +789,6 @@ input::-webkit-inner-spin-button {
     width: 100%;
 }
 
-.news-details-main-text {
-    font-size: 16px;
-    line-height: 24px;
-    color: #020608;
-}
-
 .like-news-container {
     background: #FFFFFF;
     box-shadow: 0 4px 30px rgba(23, 62, 77, 0.1);
@@ -1112,16 +1111,10 @@ input::-webkit-inner-spin-button {
     margin: 0 0 0 16px;
 }
 
-.services-text {
+.services-container > p {
     margin: 0 0 35px 0;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: #020608;
-}
-
-.services-text {
     color: #0F2B36;
 }
 
@@ -1134,6 +1127,26 @@ input::-webkit-inner-spin-button {
     background-color: #0C1939;
     margin: 0 0 40px 0;
     width: 100%;
+}
+
+.services-suggestion:after {
+    color: #FBDF46;
+    content: close-quote;
+    font-size: 70px;
+    line-height: 0.1em;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+}
+
+.services-suggestion:before {
+    color: #FBDF46;
+    content: open-quote;
+    font-size: 70px;
+    line-height: 0.1em;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
 }
 
 .services-suggestion-img {
@@ -2043,10 +2056,6 @@ input::-webkit-inner-spin-button {
         font-size: 18px;
     }
 
-    .news-details-main-text {
-        font-size: 14px;
-    }
-
     .appeal-head-container {
         grid-template-columns: 1fr;
         grid-gap: 0;
@@ -2511,5 +2520,13 @@ input::-webkit-inner-spin-button {
 
     .index-slider-item img {
         width: 100%;
+    }
+
+    .services-title-container {
+        padding: 0 16px;
+    }
+
+    .services-container > p {
+        padding: 0 16px;
     }
 }
