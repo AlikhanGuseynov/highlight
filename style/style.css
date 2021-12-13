@@ -1757,6 +1757,7 @@ input::-webkit-inner-spin-button {
     border: 1px solid #11323E;
     padding: 40px 30px 65px;
     position: relative;
+    min-height: 342px;
 }
 
 .provide-service-item-inner-hover {
@@ -1934,6 +1935,14 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
+}
+
+.provide-service-page {
+    padding-bottom: 0;
+}
+
+.provide-service-page:before {
+    content: none;
 }
 
 @media only screen and (max-width: 700px ) {
