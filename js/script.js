@@ -66,7 +66,9 @@ $(document).ready(function () {
     })
 
     indexSlider.on('changed.owl.carousel', function (event) {
-        console.log(event.item.index)
+        $('.slide-note').removeClass('active');
+        const noteList = document.getElementsByClassName('slide-note');
+        noteList[event.item.index - 2].classList.add('active')
     })
 
 
