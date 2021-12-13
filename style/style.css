@@ -1895,14 +1895,18 @@ input::-webkit-inner-spin-button {
     margin-top: 30px;
     background: #E8ECED;
     border-radius: 6px;
-    display: inline-block;
     max-width: 468px;
+    display: none;
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
     color: #000000;
     padding: 30px 20px;
     position: relative;
+}
+
+.slide-note.active {
+    display: inline-block;
 }
 
 .slide-note:after {
