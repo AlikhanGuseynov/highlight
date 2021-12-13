@@ -94,6 +94,25 @@ $(document).ready(function () {
         });
     })
 
+    $("#contactForm").submit(function (e) {
+        e.preventDefault();
+        var form = $(this);
+        var url = form.attr('action');
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: form.serialize(),
+            success: function (data) {
+                $('.success-message-container').addClass('active')
+            },
+            error: function (data) {
+                const errorText = $('.contact-error-text');
+                errorText.text(data.error.message);
+                errorText.addClass('active');
+            }
+        });
+    });
+
 })
 
 function certificateClick(index) {

@@ -235,32 +235,45 @@
                 <p class="contact-title">
                     Bizə yazın
                 </p>
-                <form action="">
+                <form id="contactForm" action="">
                     <div class="contact-form">
-                        <input class="contact-input" placeholder="Ad" type="text">
-                        <input class="contact-input" placeholder="Soyad" type="text">
-                        <input class="contact-input" placeholder="Email" type="text">
+                        <input class="contact-input" name="name" placeholder="Ad" type="text">
+                        <input class="contact-input" name="surname" placeholder="Soyad" type="text">
+                        <input class="contact-input" name="email" placeholder="Email" type="text">
 
                         <div class="status-container flex align-items-center">
                             <p class="status-container-text">Status</p>
                             <div class="flex align-items-center">
-                                <input checked name="status" id="utterance" class="status-radio" type="radio">
+                                <input checked name="status" value="comment" id="utterance" class="status-radio"
+                                       type="radio">
                                 <label class="status-label" for="utterance">İrad</label>
                             </div>
                             <div class="flex align-items-center">
-                                <input name="status" id="offer" class="status-radio" type="radio">
+                                <input name="status" value="offer" id="offer" class="status-radio" type="radio">
                                 <label class="status-label" for="offer">Təklif</label>
                             </div>
                         </div>
 
-                        <textarea name="" id="" placeholder="Mesajınız" class="contact-textarea" cols="30"
+                        <textarea name="message" placeholder="Mesajınız" class="contact-textarea" cols="30"
                                   rows="10"></textarea>
+
+                        <p class="contact-error-text">Error</p>
+
                         <div class="send-form-btn-wrapper">
-                            <button class="send-form-btn">
-                                GÖNDƏR
-                                <img src="./img/send-form.svg" alt="">
-                            </button>
+                            <div class="submit-btn-mobile">
+                                <button type="submit" class="send-form-btn">
+                                    GÖNDƏR
+                                    <img src="./img/send-form.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="flex align-items-center success-message-container">
+                                <img src="./img/success-message.svg" alt="">
+                                <p class="success-message-text">Mesajınız uğurla göndərildi!</p>
+                            </div>
+
                         </div>
+
 
                     </div>
                 </form>
