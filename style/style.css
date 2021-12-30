@@ -208,8 +208,15 @@ input::-webkit-inner-spin-button {
     text-decoration: none;
 }
 
-.subheader-item-link:hover {
+.subheader-item-link:hover:not(.subheader-item-link-header) {
     background: #FBDF46;
+}
+
+.subheader-item-link-header {
+    font-size: 12px;
+    color: #A1B2B8;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .header-right {
