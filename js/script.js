@@ -13,16 +13,20 @@ $('.sidebar-nav-link').click((e) => {
 $(document).ready(function () {
 
     const blogDetailCarousel = $(".blog-detail-carousel")
-    if ($(window).width() > 700) {
-        blogDetailCarousel.removeClass('owl-carousel')
-    } else {
-        blogDetailCarousel.owlCarousel({
-            dots: true,
-            margin: 10,
-            nav: true,
-            items: 1,
-        });
-    }
+    blogDetailCarousel.owlCarousel({
+        dots: true,
+        margin: 15,
+        nav: true,
+        items: 1,
+        responsive: {
+            700: {
+                items: 3,
+                autoWidth: true,
+                dots: false,
+                nav: false
+            }
+        }
+    });
 
     $('.close-carousel-btn').click((e) => {
         $(".carousel-popup-wrapper").removeClass('active')
@@ -38,7 +42,6 @@ $(document).ready(function () {
             items: 1,
         });
     })
-
 
     const indexSlider = $(".index-slider")
     indexSlider.owlCarousel({
@@ -57,6 +60,7 @@ $(document).ready(function () {
             }
         }
     });
+
     $('.slider-btn.next').click(function () {
         indexSlider.trigger('next.owl.carousel');
     })
@@ -70,7 +74,6 @@ $(document).ready(function () {
         const noteList = document.getElementsByClassName('slide-note');
         noteList[event.item.index - 2].classList.add('active')
     })
-
 
     $('.scroll-btn-link').on('click', function (e) {
         let href = $(this).attr('href');

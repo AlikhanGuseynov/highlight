@@ -1222,6 +1222,8 @@ input::-webkit-inner-spin-button {
 
 .blog-detail-img-container {
     margin-bottom: 30px;
+    max-height: 420px;
+    overflow: hidden;
 }
 
 .blog-detail-img {
@@ -1247,13 +1249,17 @@ input::-webkit-inner-spin-button {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
 }
 
 .carousel-item {
     width: 100%;
     cursor: pointer;
     max-height: 80vh;
+    max-width: 376px;
+}
+
+.carousel-popup-wrapper .carousel-item{
+    max-width: unset;
 }
 
 
@@ -2279,6 +2285,10 @@ input::-webkit-inner-spin-button {
 
     .blog-detail-title {
         margin-top: 60px;
+    }
+
+    .blog-detail-img-container {
+        max-height: 170px;
     }
 
     .popup-carousel.owl-theme .owl-nav .owl-prev {
