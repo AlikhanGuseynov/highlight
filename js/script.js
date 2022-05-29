@@ -52,13 +52,27 @@ $(document).ready(function () {
         center: true,
         autoWidth: false,
         lazyLoad: true,
-        items: 1,
+        items: 1.1,
         responsive: {
             700: {
                 items: 1.5,
                 autoWidth: true,
             }
         }
+    });
+
+    const indexSliderNext = $(".index-slider-next")
+    indexSliderNext.owlCarousel({
+        dots: false,
+        margin: 10,
+        nav: false,
+        loop: true,
+        autoWidth: false,
+        lazyLoad: true,
+        items: 1,
+        touchDrag  : false,
+        mouseDrag  : false,
+        animateIn: 'fadeIn',
     });
 
     $('.slider-btn.next').click(function () {
@@ -69,10 +83,14 @@ $(document).ready(function () {
         indexSlider.trigger('prev.owl.carousel', [300]);
     })
 
+    let indexSliderIndex = 0;
     indexSlider.on('changed.owl.carousel', function (event) {
-        $('.slide-note').removeClass('active');
-        const noteList = document.getElementsByClassName('slide-note');
-        noteList[event.item.index - 2].classList.add('active')
+        if (indexSliderIndex > event.item.index) {
+            indexSliderNext.trigger('prev.owl.carousel');
+        } else {
+            indexSliderNext.trigger('next.owl.carousel');
+        }
+        indexSliderIndex = event.item.index;
     })
 
     $('.scroll-btn-link').on('click', function (e) {

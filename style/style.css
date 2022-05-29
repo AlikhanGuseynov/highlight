@@ -1909,13 +1909,13 @@ input::-webkit-inner-spin-button {
     background: #E8ECED;
     border-radius: 6px;
     max-width: 468px;
-    display: none;
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
     color: #000000;
     padding: 30px 20px;
     position: relative;
+    width: 100%;
 }
 
 .slide-note.active {
@@ -1932,11 +1932,17 @@ input::-webkit-inner-spin-button {
 .slider-width {
     width: 968px;
     margin: 0 auto;
+    position: relative;
 }
 
 .slider-buttons {
-    margin-top: 76px;
+    margin-top: 10px;
     display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
 }
 
 .slider-btn {
@@ -2562,6 +2568,7 @@ input::-webkit-inner-spin-button {
 
     .index-call-you .width {
         padding: 0;
+        max-width: 100%;
     }
 
     .index-call-you .call-you-title {
@@ -2611,8 +2618,8 @@ input::-webkit-inner-spin-button {
     }
 
     .index-slider {
-        width: calc(100vw - 48px) !important;
-        margin: 30px 24px 0;
+        /*width: calc(100vw - 48px) !important;*/
+        /*margin: 30px 24px 0;*/
     }
 
     .index-slider-item img {
